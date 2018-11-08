@@ -6,8 +6,11 @@ class Interaction
     @cat = cat
   end
 
-  def start
-
+  def interaction_menu
+  end
+# the adoption process
+  def adoption
+    @cat.adoption
   end
 
   def feed

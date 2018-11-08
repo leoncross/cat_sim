@@ -1,0 +1,6 @@
+
+describe Adoption do
+
+
+
+end
