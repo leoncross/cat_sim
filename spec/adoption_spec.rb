@@ -1,4 +1,4 @@
-
+require "adoption"
 describe Adoption do
 
 

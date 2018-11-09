@@ -30,36 +30,55 @@ class Adoption
     selection = gets.chomp
     case selection
     when "1"
-      see_available_cats
+      available_cats
     when "2"
       take_home_a_cat
+    when "3"
+      cat_picture
     when "9"
       @counter = 1
     end
   end
 
-
-  def see_available_cats
-    puts `clear`
-    puts "Sadly we only have 1 cat at this time"
-    puts "his name is Alfred! he loves to play ball"
-    puts " --------------------------------------- "
-    puts "would you like to adopt him today? (y / n)"
-    see_available_cats_selection
-  end
-
-  def see_available_cats_selection
+  def available_cats_selection
     selection = gets.chomp
     case selection
     when "y"
-      see_available_cats
-    when "n"
       take_home_a_cat
+    when "n"
+      main_menu
     end
   end
 
 
   def take_home_a_cat
-
+    puts "Fantastic - enjoy Alfred!"
+    @counter = 1
   end
+
+
+
+  def available_cats
+    puts "                        _                        "
+    puts "  Meet Alfrd!           \`*-.                    "
+    puts "                         )  _`-.                 "
+    puts "  He just joined us     .  : `. .                "
+    puts "  We haven't had        : _   '  \               "
+    puts "  time to work out      ; *` _.   `*-._          "
+    puts "  his personality yet   `-.-'          `-.       "
+    puts "  but why dont you        ;       `       `.     "
+    puts "  take him home           :.       .        \    "
+    puts "  and see how you         . \  .   :   .-'   .   "
+    puts "  get along?              '  `+.;  ;  '      :   "
+    puts "                          :  '  |    ;       ;-. "
+    puts "                          ; '   : :`-:     _.`* ;"
+    puts "                       .*' /  .*' ; .*`- +'  `*' "
+    puts "                       `*-*   `*-*  `*-*'        "
+    puts
+    puts
+    puts " Would you like to adopt Aflred today? (Y/ N)"
+    see_available_cats_selection
+  end
+
+
 end
